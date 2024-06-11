@@ -1,0 +1,10 @@
+# Virtual environment directory
+llm/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Vector database directory
+gpt_model/db

@@ -13,14 +13,14 @@ from data_loader import pdf_to_text
 from datasets import load_dataset
 import random
 # load dataset (questions)
-dataset = load_dataset("allenai/sciq", split="train")
+dataset = load_dataset("allenai/sciq", split="test")
 dataset = dataset.select(range(1000))
 all_questions = [doc["question"] for doc in dataset]
 all_ground_truth_answers = [doc["correct_answer"] for doc in dataset]
 
 pdf_paths = ["Chemistry.pdf", "Physics.pdf"]
 documents = pdf_to_text(pdf_paths)
-os.environ['OPENAI_API_KEY'] = '<token>'
+os.environ['OPENAI_API_KEY'] = 'sk-proj-AvYq8YNz9wT73y3Cw83aT3BlbkFJJ2QNh7nnpsBGOHq2Ry31'
 nltk.download('punkt')
 # initialize the bm25 retriever and faiss retriever
 bm25_retriever = BM25Retriever.from_documents(
@@ -95,7 +95,7 @@ def ask_question(question):
 
 # Evaluation (BLEU Score)
 questions, ground_truth_answers = zip(
-    *random.sample(list(zip(all_questions, all_ground_truth_answers)), 10))
+    *random.sample(list(zip(all_questions, all_ground_truth_answers)), 100))
 # Ask questions and calculate BLEU scores
 bleu_scores = []
 for question, answer in zip(questions, ground_truth_answers):

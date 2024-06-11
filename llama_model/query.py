@@ -16,7 +16,7 @@ from datasets import load_dataset
 
 
 # load  dataset(questions)
-dataset = load_dataset("allenai/sciq", split="train")
+dataset = load_dataset("allenai/sciq", split="test")
 dataset = dataset.select(range(1000))
 all_questions = [doc["question"] for doc in dataset]
 all_ground_truth_answers = [doc["correct_answer"] for doc in dataset]
@@ -111,7 +111,7 @@ def ask_question(question):
 
 # Evaluation (BLEU Score)
 questions, ground_truth_answers = zip(
-    *random.sample(list(zip(all_questions, all_ground_truth_answers)), 10))
+    *random.sample(list(zip(all_questions, all_ground_truth_answers)), 100))
 # Ask questions and calculate BLEU scores
 bleu_scores = []
 for question, answer in zip(questions, ground_truth_answers):

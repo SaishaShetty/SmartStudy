@@ -1,0 +1,7 @@
+PyPDF2==3.0.1
+nltk==3.6.7
+langchain==0.0.97
+openai==0.16.0
+pprint==0.1
+torch==1.11.0
+chromadb==0.3.23

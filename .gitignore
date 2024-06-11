@@ -8,3 +8,8 @@ __pycache__/
 
 # Vector database directory
 gpt_model/db
+gpt_model/cb
+
+llama_model/cb
+.DS_Store
+*.pdf

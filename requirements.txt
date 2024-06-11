@@ -1,7 +1,10 @@
 PyPDF2==3.0.1
 nltk==3.6.7
-langchain==0.0.97
-openai==0.16.0
-pprint==0.1
-torch==1.11.0
-chromadb==0.3.23
+pydantic==1.10.8 
+langchain>=0.0.231
+chromadb==0.3.26 # https://github.com/langchain-ai/langchain/issues/4040
+langchain-community # https://github.com/langchain-ai/langchain/issues/21880
+sentence-transformers
+llama-cpp-python
+datasets
+faiss-cpu

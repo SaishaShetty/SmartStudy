@@ -5,6 +5,7 @@ Baseline Model : Using ChatGPT 3.5 we are going to compare the results with our 
 
 1. Worked on a "Retrieve-then-Generate" RAG pipeline using Langchain and GPT-4 Model
 2. Worked on a "Retrieve-then-Generate" RAG pipeline using LLAMA Model
+3. Worked on a "Hybrid" RAG pipeline using Langchain and GPT-4 Model
 
 
 GPT-4 Model :

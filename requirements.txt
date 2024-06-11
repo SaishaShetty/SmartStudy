@@ -8,3 +8,5 @@ sentence-transformers
 llama-cpp-python
 datasets
 faiss-cpu
+pandas==2.2.2
+

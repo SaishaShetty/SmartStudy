@@ -3,12 +3,13 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
+import pandas as pd
 import os
 import pprint
 import nltk
 from nltk.translate.bleu_score import sentence_bleu
 
-os.environ['OPENAI_API_KEY'] = '<your_token>'
+os.environ['OPENAI_API_KEY'] = '#'
 nltk.download('punkt')
 embeddings = OpenAIEmbeddings()
 
@@ -56,10 +57,10 @@ def ask_question(question):
     pprint.pprint(generated_text)
     return answer
 
-# Example question
-"""question = "Most fungi get organic compounds from what?"
-ask_question_bleu(question)"""
 
-question = "What protects a developing flower while it is still a bud?"
-#references = ["it is 100 Celsius"]
-ask_question(question)
+test_dataset = pd.read_csv("test.csv")
+
+test_df = test_dataset['question']
+
+for qn in test_df[:10]:
+    ask_question(qn)

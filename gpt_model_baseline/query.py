@@ -14,7 +14,7 @@ dataset = dataset.select(range(1000))
 all_questions = [doc["question"] for doc in dataset]
 all_ground_truth_answers = [doc["correct_answer"] for doc in dataset]
 
-os.environ['OPENAI_API_KEY'] = 'sk-proj-XimCrKpeskKpu0IqoxIiT3BlbkFJ1FRySLE3uZVz5PShfckM'
+os.environ['OPENAI_API_KEY'] = '<token>'
 nltk.download('punkt')
 
 
@@ -31,7 +31,6 @@ chain = LLMChain(llm=llm, prompt=Prompt)
 def ask_question_bleu(question, references):
     answer = chain.invoke(question)
     generated_text = answer['text']
-
     reference_texts = [nltk.word_tokenize(ref) for ref in references]
     generated_tokens = nltk.word_tokenize(generated_text)
     bleu_score = sentence_bleu(reference_texts, generated_tokens, weights=[1])

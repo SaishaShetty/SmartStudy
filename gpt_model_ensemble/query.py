@@ -20,7 +20,7 @@ all_ground_truth_answers = [doc["correct_answer"] for doc in dataset]
 
 pdf_paths = ["Chemistry.pdf", "Physics.pdf"]
 documents = pdf_to_text(pdf_paths)
-os.environ['OPENAI_API_KEY'] = 'sk-proj-XimCrKpeskKpu0IqoxIiT3BlbkFJ1FRySLE3uZVz5PShfckM'
+os.environ['OPENAI_API_KEY'] = '<token>'
 nltk.download('punkt')
 # initialize the bm25 retriever and faiss retriever
 bm25_retriever = BM25Retriever.from_documents(

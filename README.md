@@ -1,7 +1,7 @@
 # ecs289L-SmartStudy
 Boosting Student Learning with RAG-Powered Insights
 
-Baseline Model : Using ChatGPT 3.5 we are going to compare the results with our two proposed models.
+Baseline Model : Using ChatGPT 4 we are going to compare the results with our two proposed models.
 
 1. Worked on a "Retrieve-then-Generate" RAG pipeline using Langchain and GPT-4 Model
 2. Worked on a "Retrieve-then-Generate" RAG pipeline using LLAMA Model

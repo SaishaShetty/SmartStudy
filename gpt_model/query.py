@@ -11,11 +11,11 @@ from nltk.translate.bleu_score import sentence_bleu
 from datasets import load_dataset
 import random
 # load dataset (questions)
-dataset = load_dataset("allenai/sciq", split="validation")
+dataset = load_dataset("allenai/sciq", split="test")
 dataset = dataset.select(range(1000))
 all_questions = [doc["question"] for doc in dataset]
 all_ground_truth_answers = [doc["correct_answer"] for doc in dataset]
-os.environ['OPENAI_API_KEY'] = 'sk-proj-MzHMsb5HruiKw4xQeO7QT3BlbkFJkH3co1SsmG4RHe3gM6Ug'
+os.environ['OPENAI_API_KEY'] = '#'
 nltk.download('punkt')
 embeddings = OpenAIEmbeddings()
 

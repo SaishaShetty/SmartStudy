@@ -26,19 +26,19 @@ We use ChatGPT-4 as our baseline model to compare the results with our two propo
 
 ## Results
 ### Baseline Model (ChatGPT-4)
-- **BLEU Score**: ![Alt text](images/GPT_baseline_bleu100.png)
+- **BLEU Score**: <img src="images/GPT_baseline_bleu100.png" alt="ChatGPT-4 Results" width="600">
 - **Notes**: [Additional observations]
 
 ### Langchain + GPT-4 Model + Retrieve-then-generate
-- **BLEU Score**: ![Alt text](images/bleu_GPT4_RAG.png)
+- **BLEU Score**: <img src="images/ChatGPT4_bleu.png" alt="ChatGPT-4 Results" width="600">
 - **Notes**: [Additional observations]
 
 ### LLAMA-3 Model + Retrieve-then-generate
-- **BLEU Score**: ![Alt text](images/Llama3_bleu_100.png)
+- **BLEU Score**: <img src="images/Llama3_bleu_100.png" alt="LLAMA-3 Results" width="600">
 - **Notes**: [Additional observations]
 
 ### Hybrid Model (Langchain + GPT-4)
-- **BLEU Score**: ![Alt text](images/GPT_ensemble_bleu_100.png)
+- **BLEU Score**: <img src="images/GPT_ensemble_bleu_100.png" alt="ChatGPT-4 with Hybrid RAG pipeline Results" width="600">
 - **Notes**: [Additional observations]
 
 ## Future Work

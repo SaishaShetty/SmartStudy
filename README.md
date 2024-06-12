@@ -50,3 +50,17 @@ We use ChatGPT-4 as our baseline model to compare the results with our two propo
    ```sh
    git clone https://github.com/your-repository/ecs289L-SmartStudy.git
    cd ecs289L-SmartStudy
+2. Install dependencies:
+    ```sh
+    pip install -r requirements.txt
+3. Run the setup script for your models:
+    ```sh
+    python setup.py #This depends on which model you running
+4. Use the query script to evaluate the models:
+    ```sh
+    python query.py
+
+## Contributions
+- Saisha Shetty
+- Yu-Jie Wu
+- Jayesh Chhabra

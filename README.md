@@ -15,31 +15,27 @@ We use ChatGPT-4 as our baseline model to compare the results with our two propo
 ## Model Details
 
 ### GPT-4 Model
-- **Parameters**: Trained on 8 billion parameters.
+- **Parameters**: Trained on 1.7 trillion parameters.
 - **Notes**: Be cautious of hallucinations.
 - **Evaluation Metric**: BLEU Score
 
-### LLAMA-3 Model
-- **Parameters**: [Parameter count not specified]
+### LLAMA-3 8B Model
+- **Parameters**: Trained on 8 billion parameters.
 - **Notes**: Be cautious of hallucinations.
 - **Evaluation Metric**: BLEU Score
 
 ## Results
 ### Baseline Model (ChatGPT-4)
-- **BLEU Score**: <img src="" alt="ChatGPT-4 Results" width="400">
-- **Notes**: [Additional observations]
+- **BLEU Score**: <img src="images/GPT_baseline_bleu_filtered_56.png" alt="ChatGPT-4 Results" width="400">
 
 ### Langchain + GPT-4 Model + Retrieve-then-generate
 - **BLEU Score**: <img src="results/gpt_4_RAG.png" alt="ChatGPT-4 Results" width="400">
-- **Notes**: [Additional observations]
 
 ### LLAMA-3 Model + Retrieve-then-generate
-- **BLEU Score**: <img src="" alt="LLAMA-3 Results" width="400">
-- **Notes**: [Additional observations]
+- **BLEU Score**: <img src="images/Llama3_bleu_filtered_39.png" alt="LLAMA-3 Results" width="400">
 
 ### Hybrid Model (Langchain + GPT-4)
-- **BLEU Score**: <img src="" alt="ChatGPT-4 with Hybrid RAG pipeline Results" width="400">
-- **Notes**: [Additional observations]
+- **BLEU Score**: <img src="images/GPT_ensemble_filtered_62.png" alt="ChatGPT-4 with Hybrid RAG pipeline Results" width="400">
 
 ## Future Work
 1. Explore better RAG pipelines such as Dense Passage Retrieval (DPR).

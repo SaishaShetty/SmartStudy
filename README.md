@@ -27,19 +27,15 @@ We use ChatGPT-4 as our baseline model to compare the results with our two propo
 ## Results
 ### Baseline Model (ChatGPT-4)
 - **BLEU Score**: <img src="" alt="ChatGPT-4 Results" width="400">
-- **Notes**: [Additional observations]
 
 ### Langchain + GPT-4 Model + Retrieve-then-generate
 - **BLEU Score**: <img src="results/gpt_4_RAG.png" alt="ChatGPT-4 Results" width="400">
-- **Notes**: [Additional observations]
 
 ### LLAMA-3 Model + Retrieve-then-generate
 - **BLEU Score**: <img src="" alt="LLAMA-3 Results" width="400">
-- **Notes**: [Additional observations]
 
 ### Hybrid Model (Langchain + GPT-4)
 - **BLEU Score**: <img src="" alt="ChatGPT-4 with Hybrid RAG pipeline Results" width="400">
-- **Notes**: [Additional observations]
 
 ## Future Work
 1. Explore better RAG pipelines such as Dense Passage Retrieval (DPR).

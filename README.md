@@ -30,7 +30,7 @@ We use ChatGPT-4 as our baseline model to compare the results with our two propo
 - **Notes**: [Additional observations]
 
 ### Langchain + GPT-4 Model + Retrieve-then-generate
-- **BLEU Score**: <img src="images/bleu_GPT4_RAG.png" alt="ChatGPT-4 Results" width="400">
+- **BLEU Score**: <img src="images/gpt4_RAG.png" alt="ChatGPT-4 Results" width="400">
 - **Notes**: [Additional observations]
 
 ### LLAMA-3 Model + Retrieve-then-generate

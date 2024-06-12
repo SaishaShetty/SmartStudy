@@ -15,12 +15,12 @@ We use ChatGPT-4 as our baseline model to compare the results with our two propo
 ## Model Details
 
 ### GPT-4 Model
-- **Parameters**: Trained on 8 billion parameters.
+- **Parameters**: Trained on 1.7 trillion parameters.
 - **Notes**: Be cautious of hallucinations.
 - **Evaluation Metric**: BLEU Score
 
-### LLAMA-3 Model
-- **Parameters**: [Parameter count not specified]
+### LLAMA-3 8B Model
+- **Parameters**: Trained on 8 billion parameters.
 - **Notes**: Be cautious of hallucinations.
 - **Evaluation Metric**: BLEU Score
 

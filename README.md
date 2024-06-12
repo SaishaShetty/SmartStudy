@@ -32,7 +32,7 @@ We use ChatGPT-4 as our baseline model to compare the results with our two propo
 - **BLEU Score**: <img src="results/gpt_4_RAG.png" alt="ChatGPT-4 Results" width="400">
 
 ### LLAMA-3 Model + Retrieve-then-generate
-- **BLEU Score**: <img src="images/Llama3_bleu_filtered_39.png" alt="LLAMA-3 Results" width="400">
+- **BLEU Score**: <img src="images/Llama3_bleu_filtered_44.png" alt="LLAMA-3 Results" width="400">
 
 ### Hybrid Model (Langchain + GPT-4)
 - **BLEU Score**: <img src="images/GPT_ensemble_filtered_62.png" alt="ChatGPT-4 with Hybrid RAG pipeline Results" width="400">

@@ -66,7 +66,7 @@ def ask_question_bleu(question, references):
 
     reference_texts = [nltk.word_tokenize(ref) for ref in references]
     generated_tokens = nltk.word_tokenize(generated_text)
-    bleu_score = sentence_bleu(reference_texts, generated_tokens)
+    bleu_score = sentence_bleu(reference_texts, generated_tokens, weights=[1])
 
     print("Generated Answer:")
     pprint.pprint(generated_text)
@@ -100,6 +100,8 @@ questions, ground_truth_answers = zip(
 bleu_scores = []
 for question, answer in zip(questions, ground_truth_answers):
     ans, bleu = ask_question_bleu(question, [answer])
-    bleu_scores.append(bleu)
+    if bleu > 0:
+        bleu_scores.append(bleu)
+print("total data after filtered:", len(bleu_scores))
 average_bleu = sum(bleu_scores) / len(bleu_scores)
 print("Average BLEU Score:", average_bleu)

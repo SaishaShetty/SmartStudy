@@ -1,4 +1,4 @@
-# ECS289L-SmartStudy
+# SmartStudy
 Boosting Student Learning with RAG-Powered Insights
 
 ## Overview
